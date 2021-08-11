@@ -4,7 +4,26 @@
 > - Make sure that you have `git` on your machine. You can check it by open cmd and type `git`+`Enter`. If `git` is on your machine you will see all basic information about your current `git` version. If not please install `git` from <https://git-scm.com/download/win>.
 > - We recommend to work with GitHub in VS code. You can download VS code (VSC) from https://code.visualstudio.com/ and the extension for GitHub from https://code.visualstudio.com/docs/editor/github (there you will find also some usefull instructions for working with GitHub in VS Code).
 > - For more informations about GitHub please visit the official GitHub Documentation (https://docs.github.com/en).
-> 
+
+
+## Fork a repository
+
+A `fork` is basically a *special* clone of the repository: when you create a `fork`, a new repository is created in *your* GitHub account, which is linked to the main one. You have now full control of this repository (your are the admin), but you can still see if changes are made in the main repo and in case sync this changes with your version (see below). Most importantly, you can change the code yourself without interfering with other people work.
+
+These are the most useful commands when dealing with forks:
+
+0. `git remote -v` -> List the current configured remote repository for your fork.
+1. `git remote add upstream <https://user@github.com/main-repository-address>` -> adds a pointer to the main repository so you can do all the `reading` operations you would normally do with your own repository (fetch and pull).
+2. `git fetch upstream` -> Fetch the branches and their respective commits from the upstream repository
+3. `git pull upstream <branch>` -> merge the latest changes from the main repo
+
+However, at some point you might want to merge your code into the main repository. This is done creating a so called `pull request`: you are asking the main developer to review your code and merge it into the main repository.
+
+You can create `pull requests` directly from GitHub or from VSC (see below)
+
+
+
+
 ## 1. Clone a repository
 1. Create a folder on your computer where you want to save your cloned respository (e.g. in C:\code).
 2. Open the `terminal` in VSC, type `cd C:\code` and press `Enter`.
@@ -25,21 +44,6 @@ You probably not need all of these commands everyday. We collect some important 
 5. `git commit -am "\<message>"` -> commit all staged changes (save the status of the repo at that time)
 6. `git push` -> send the you commits to the origin
 
-### Working with forks
-
-Forks are not really a `git` concept, but they were introduced by `GitHub` and now are basically implemented by every repo hosting provider.
-A `fork` is basically a *special* clone of the repository: when you create a `fork`, a new repository is created in your GitHub account, which is linked to the main one. You have now full control of this repository (your are the admin), but you can still see if changes are made in the main repo and in case sync this changes with your version. Most importantly, you can chage the code yourself without interfering with other people work.
-
-These are the most useful commands when dealing with forks:
-
-0. `git remote -v` -> List the current configured remote repository for your fork.
-1. `git remote add upstream <https://user@github.com/main-repository-address>` -> adds a pointer to the main repository so you can do all the `reading` operations you would normally do with your own repository (fetch and pull).
-2. `git fetch upstream` -> Fetch the branches and their respective commits from the upstream repository
-3. `git pull upstream <branch>` -> merge the latest changes from the main repo
-
-However, at some point you might want to merge your code into the main repository. This is done creating a so called `pull request`. I have always found this name confusing and I usually think of it as a `merge request`: you are asking the main developer to review your code and merge it into the main repository.
-
-You can create `pull requests` directly from GitHub: <https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/allowing-changes-to-a-pull-request-branch-created-from-a-fork>
 
 ## Git tools
 
