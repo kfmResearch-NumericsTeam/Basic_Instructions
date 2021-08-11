@@ -5,10 +5,61 @@
 > - We recommend to work with GitHub in VS code. You can download VS code (VSC) from https://code.visualstudio.com/ and the extension for GitHub from https://code.visualstudio.com/docs/editor/github (there you will find also some usefull instructions for working with GitHub in VS Code).
 > - For more informations about GitHub please visit the official GitHub Documentation (https://docs.github.com/en).
 > 
-## 1. `clone` a repository
+## 1. Clone a repository
 1. Create a folder on your computer where you want to save your cloned respository (e.g. in C:\code).
 2. Open the `terminal` in VSC, type `cd C:\code` and press `Enter`.
-3. Type `git clone https://github.com/franaudo/teaching_template.git`
+3. Type `git clone https://github.com/kfmResearch-NumericsTeam/02_CMM_Usermat.git` (here we clone the CMM_Usermat repository - You will find the .git link in the corresponding repository)
+4. Now you can open the Foler in `C:\code` and work on it in VSC.
 
+## 2. Basic commands 
+Once you have cloned the repo, you can use the following commands to interact with it:
 
+[<img src="https://i.redd.it/8341g68g1v7y.png">](https://i.redd.it/8341g68g1v7y.png)
+
+You probably not need all of these commands everyday. We collect some important commands, which you will run all the time to keep track of your local repository and sinc it with the remote 
+
+1. `git fetch` -> get the latest changes without merging
+2. `git pull` -> get the latest changes and merge them
+3. `git status` -> check if there are changes to the repo
+4. `git add .` -> stage all the changes
+5. `git commit -am "\<message>"` -> commit all staged changes (save the status of the repo at that time)
+6. `git push` -> send the you commits to the origin
+
+### Working with forks
+
+Forks are not really a `git` concept, but they were introduced by `GitHub` and now are basically implemented by every repo hosting provider.
+A `fork` is basically a *special* clone of the repository: when you create a `fork`, a new repository is created in your GitHub account, which is linked to the main one. You have now full control of this repository (your are the admin), but you can still see if changes are made in the main repo and in case sync this changes with your version. Most importantly, you can chage the code yourself without interfering with other people work.
+
+These are the most useful commands when dealing with forks:
+
+0. `git remote -v` -> List the current configured remote repository for your fork.
+1. `git remote add upstream <https://user@github.com/main-repository-address>` -> adds a pointer to the main repository so you can do all the `reading` operations you would normally do with your own repository (fetch and pull).
+2. `git fetch upstream` -> Fetch the branches and their respective commits from the upstream repository
+3. `git pull upstream <branch>` -> merge the latest changes from the main repo
+
+However, at some point you might want to merge your code into the main repository. This is done creating a so called `pull request`. I have always found this name confusing and I usually think of it as a `merge request`: you are asking the main developer to review your code and merge it into the main repository.
+
+You can create `pull requests` directly from GitHub: <https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/allowing-changes-to-a-pull-request-branch-created-from-a-fork>
+
+## Git tools
+
+Even though learning the basic CLI commands can be extremelly usefull, when things get complicated (merging, resolving conflicts, visualising the log history, etc.) it is a good idea to use external tools designed to work with git.
+
+Here, I suggest two main tools, but many are available and in the end is a metter of preference.
+
+### GitKraken
+
+This software is free to use for public repos for everyone. For students and university members the pro version is available for free, which allows to use its functionalities also for private repos.
+
+You can download the software here: <https://www.gitkraken.com/download>
+
+On the website there are plenty of videos that explain the software and git concepts in general, which I strongly reccomend to watch.
+
+[<img src="https://www.gitkraken.com/img/index/gk-product-2.png">](GitKraken)
+
+### vscode
+
+In vscode git is already integrated, but I suggest to enhance the basic functionalities with the `gitgraph` extension <https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph>
+
+[<img src="https://github.com/mhutchie/vscode-git-graph/raw/master/resources/demo.gif">](git_graph)
 
