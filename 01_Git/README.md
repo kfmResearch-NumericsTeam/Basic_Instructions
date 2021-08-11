@@ -18,51 +18,15 @@ A `fork` is basically a *special* clone of the repository: when you create a `fo
 4. Now you can open the Foler in `C:\code` and work on it in VSC.
 
 ## 3. Pull requests from VSC 
-To updated your cloed
-
-However, at some point you might want to merge your code into the main repository. This is done creating a so called `pull request`: you are asking the main developer to review your code and merge it into the main repository.
-
-
+However, at some point you might want to merge your code into the main or cloned repository. This is done creating a so called `pull request`You can chose between merge only to your cloned repo or to merge it with the main repository. If the latter is used, you are asking the main developer to review your code and merge it into the main repository. 
 
 [<img src="https://github.com/kfmResearch-NumericsTeam/03_Coding_Induction/blob/main/01_Git/00_Figures/Pull%20request%20to%20your%20cloned%20repository.jpg">](https://github.com/kfmResearch-NumericsTeam/03_Coding_Induction/blob/main/01_Git/00_Figures/Pull%20request%20to%20your%20cloned%20repository.jpg)
 
 
+## 4. Working with commands
+All the stuff mention above you can do with the VSC GUI or by using `git` commands 
+We collect some important commands, which you will run all the time to keep track of your local repository and sinc it with the remote 
 
-
-
-
-
-
-
-
-
-
-You can create `pull requests` directly from GitHub or from VSC (see below)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 2. Basic commands 
-Once you have cloned the repo, you can use the following commands to interact with it:
-
-[<img src="https://i.redd.it/8341g68g1v7y.png">](https://i.redd.it/8341g68g1v7y.png)
-
-You probably not need all of these commands everyday. We collect some important commands, which you will run all the time to keep track of your local repository and sinc it with the remote 
-
-In the following some useful commands are listed when dealing with forks (you can also use this commands in VSC):
 1. `git remote -v` -> List the current configured remote repository for your fork.
 2. `git remote add upstream <https://user@github.com/main-repository-address>` -> adds a pointer to the main repository so you can do all the `reading` operations you would normally do with your own repository (fetch and pull).
 3. `git fetch upstream` -> Fetch the branches and their respective commits from the upstream repository
@@ -75,46 +39,11 @@ In the following some useful commands are listed when dealing with forks (you ca
 5. `git commit -am "\<message>"` -> commit all staged changes (save the status of the repo at that time)
 6. `git push` -> send the you commits to the origin
 
-
-
-
-
-
-
-
-Alles auch in VSC
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Git tools
 
-Even though learning the basic CLI commands can be extremelly usefull, when things get complicated (merging, resolving conflicts, visualising the log history, etc.) it is a good idea to use external tools designed to work with git.
+Even though learning the basic commands can be extremelly usefull, when things get complicated (merging, resolving conflicts, visualising the log history, etc.) it is a good idea to use external tools designed to work with git.
 
-Here, I suggest two main tools, but many are available and in the end is a metter of preference.
+Here, we suggest two main tools (but many others are available)
 
 ### GitKraken
 
@@ -128,7 +57,7 @@ On the website there are plenty of videos that explain the software and git conc
 
 ### vscode
 
-In vscode git is already integrated, but I suggest to enhance the basic functionalities with the `gitgraph` extension <https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph>
+In vscode git is already integrated, but we suggest to enhance the basic functionalities with the `gitgraph` extension <https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph>
 
 [<img src="https://github.com/mhutchie/vscode-git-graph/raw/master/resources/demo.gif">](git_graph)
 
