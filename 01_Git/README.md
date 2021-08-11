@@ -17,7 +17,9 @@ A `fork` is basically a *special* clone of the repository: when you create a `fo
 3. Type `git clone https://github.com/WeberMarius/CMM_Usermat.git` (here we clone the CMM_Usermat repository - You will find the .git link in the (cloned!) repository 
 4. Now you can open the Foler in `C:\code` and work on it in VSC.
 
-## 3. Pull request from VSC
+## 3. Pull requests from VSC 
+To updated your cloed
+
 However, at some point you might want to merge your code into the main repository. This is done creating a so called `pull request`: you are asking the main developer to review your code and merge it into the main repository.
 
 
