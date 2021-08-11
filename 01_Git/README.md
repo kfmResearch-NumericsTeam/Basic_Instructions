@@ -22,7 +22,7 @@ However, at some point you might want to merge your code into the main repositor
 
 
 
-
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
 
 
