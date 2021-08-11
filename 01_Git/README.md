@@ -53,8 +53,6 @@ You can download the software here: <https://www.gitkraken.com/download>
 
 On the website there are plenty of videos that explain the software and git concepts in general, which I strongly reccomend to watch.
 
-[<img src="https://www.gitkraken.com/img/index/gk-product-2.png">](GitKraken)
-
 ### vscode
 
 In vscode git is already integrated, but we suggest to enhance the basic functionalities with the `gitgraph` extension <https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph>
