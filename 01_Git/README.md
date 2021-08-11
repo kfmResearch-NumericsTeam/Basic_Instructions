@@ -11,6 +11,8 @@ A `fork` is basically a *special* clone of the repository: when you create a `fo
 1. Got to the the repository, which you want to `fork` (here: `02_CMM_Usermat` from the `kfmResearch-NumericsTeam`)
 2. Click on `Fork` on the top right - and it's done.
 
+Changes in the main (or Master) will be automatically included in your forked one.
+
 ## 2. Clone the (forked) repository in VSC
 1. Create a folder on your computer where you want to save your cloned respository (e.g. in C:\code).
 2. Open the `terminal` in VSC, type `cd C:\code` and press `Enter`.
