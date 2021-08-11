@@ -6,8 +6,10 @@
 > 3. For more informations about GitHub please visit the official GitHub Documentation (https://docs.github.com/en).
 > 
 ## 1. `clone` a repository
-*1. Open VSC and navigate to the folder where you want to clone the repo*
-
+Step 1: 
+Open the `terminal` in VSC, type `cd CD:\code` and press `Enter`. (Remark: y 
+Step 2: 
+adsf
 
 
 
