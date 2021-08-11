@@ -22,9 +22,7 @@ However, at some point you might want to merge your code into the main repositor
 
 
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-
-
+[<img src="https://github.com/kfmResearch-NumericsTeam/03_Coding_Induction/blob/main/01_Git/00_Figures/Pull%20request%20to%20your%20cloned%20repository.jpg">](https://github.com/kfmResearch-NumericsTeam/03_Coding_Induction/blob/main/01_Git/00_Figures/Pull%20request%20to%20your%20cloned%20repository.jpg)
 
 
 
