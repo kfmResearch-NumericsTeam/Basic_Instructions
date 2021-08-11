@@ -6,25 +6,37 @@
 > - For more informations about GitHub please visit the official GitHub Documentation (https://docs.github.com/en).
 
 
-## Fork a repository
+## 1. Fork a repository
+A `fork` is basically a *special* clone of the repository: when you create a `fork`, a new repository is created in *your* GitHub account, which is linked to the main one. You have now full control of this repository (your are the admin), but you can still see if changes are made in the main repo and in case sync this changes with your version (see below). Most importantly, you can change the code yourself without interfering with other people work. To fork a repository follow the instruction:
+1. Got to the the repository, which you want to `fork` (here: `02_CMM_Usermat` from the `kfmResearch-NumericsTeam`)
+2. Click on `Fork` on the top right - and it's done.
 
-A `fork` is basically a *special* clone of the repository: when you create a `fork`, a new repository is created in *your* GitHub account, which is linked to the main one. You have now full control of this repository (your are the admin), but you can still see if changes are made in the main repo and in case sync this changes with your version (see below). Most importantly, you can change the code yourself without interfering with other people work.
+In the following some useful commands are listed when dealing with forks (you can also use this commands in VSC):
+1. `git remote -v` -> List the current configured remote repository for your fork.
+2. `git remote add upstream <https://user@github.com/main-repository-address>` -> adds a pointer to the main repository so you can do all the `reading` operations you would normally do with your own repository (fetch and pull).
+3. `git fetch upstream` -> Fetch the branches and their respective commits from the upstream repository
+4. `git pull upstream <branch>` -> merge the latest changes from the main repo
 
-These are the most useful commands when dealing with forks:
 
-0. `git remote -v` -> List the current configured remote repository for your fork.
-1. `git remote add upstream <https://user@github.com/main-repository-address>` -> adds a pointer to the main repository so you can do all the `reading` operations you would normally do with your own repository (fetch and pull).
-2. `git fetch upstream` -> Fetch the branches and their respective commits from the upstream repository
-3. `git pull upstream <branch>` -> merge the latest changes from the main repo
+
+
+
+
+
 
 However, at some point you might want to merge your code into the main repository. This is done creating a so called `pull request`: you are asking the main developer to review your code and merge it into the main repository.
 
 You can create `pull requests` directly from GitHub or from VSC (see below)
 
 
+Alles auch in VSC
 
 
-## 1. Clone a repository
+
+
+
+
+## 1. Clone a repository in VSC
 1. Create a folder on your computer where you want to save your cloned respository (e.g. in C:\code).
 2. Open the `terminal` in VSC, type `cd C:\code` and press `Enter`.
 3. Type `git clone https://github.com/kfmResearch-NumericsTeam/02_CMM_Usermat.git` (here we clone the CMM_Usermat repository - You will find the .git link in the corresponding repository)
