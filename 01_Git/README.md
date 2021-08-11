@@ -14,7 +14,7 @@ A `fork` is basically a *special* clone of the repository: when you create a `fo
 ## 2. Clone the (forked) repository in VSC
 1. Create a folder on your computer where you want to save your cloned respository (e.g. in C:\code).
 2. Open the `terminal` in VSC, type `cd C:\code` and press `Enter`.
-3. Type `git clone https://github.com/WeberMarius/CMM_Usermat.git.git` (here we clone the CMM_Usermat repository - You will find the .git link in the (cloned!) repository 
+3. Type `git clone https://github.com/WeberMarius/CMM_Usermat.git` (here we clone the CMM_Usermat repository - You will find the .git link in the (cloned!) repository 
 4. Now you can open the Foler in `C:\code` and work on it in VSC.
 
 ## 3. Pull request from VSC
